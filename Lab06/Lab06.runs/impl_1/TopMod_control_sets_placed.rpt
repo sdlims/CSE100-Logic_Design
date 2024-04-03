@@ -1,0 +1,136 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue May 23 10:34:01 2023
+| Host         : BELSPC0002 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopMod_control_sets_placed.rpt
+| Design       : TopMod
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    58 |
+|    Minimum number of control sets                        |    58 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   187 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    58 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |    54 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             272 |          124 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |                    Enable Signal                    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+|  not_so_slow/slowclk/clk_out | slugSM/Q[0]                                         |                  |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | btnC_IBUF                                           |                  |                2 |              2 |
+|  not_so_slow/slowclk/clk_out | Counter/count0to4/upInc_0                           |                  |                2 |              3 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0             |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugBot/count0to4/CE_1               |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugBot/count0to4/CE_5               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE        |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugBot/count0to4/CE_3               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE_1      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE_4      |                  |                4 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE_3      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE_2      |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft3/count0to4/CE_0      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft1/count0to4/CE_1      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft1/count0to4/CE        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft1/count0to4/CE_2      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft2/count0to4/CE        |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft2/count0to4/CE_1      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformLeft2/count0to4/CE_0      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight1/count0to4/LD0      |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight1/count0to4/CE_2     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight1/count0to4/CE_1     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight2/count0to4/LD07_out |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight2/count0to4/CE_2     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight2/count0to4/CE_1     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight3/count0to4/CE_2     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight3/count0to4/CE_1     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Platform/platformRight3/count0to4/LD03_out |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugHeight/Inc                          |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugHeight/CE                           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugLeftt/count0to4/CE                  |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugLeftt/count0to4/CE_0                |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugLeftt/count0to4/CE_1                |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugRightt/count0to4/CE                 |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugRightt/count0to4/LD00_out           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugRightt/count0to4/CE_0               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Bug/bugRightt/count0to4/CE_2               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugBot/count0to4/CE_4               |                  |                4 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/colCounter/count0to4/frameTrigger        |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/colCounter/count0to4/CE                  |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/colCounter/count0to4/CE_0                |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/colCounter/count10to14/FF_4_8            |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/colCounter/count5to9/CE                  |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/rowCounter/count5to9/CE_1                |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | currentAdd/rowCounter/count5to9/CE_0                |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugLeft/count0to4/CE_5              |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Timer/count5to9/CE                         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugLeft/count0to4/CE                |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugLeft/count0to4/CE_4              |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugRight/count0to4/CE               |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugRight/count0to4/CE_1             |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugRight/count5to9/CE               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugBot/count0to4/CE                 |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | vgaLogic/Slugg/slugTop/count5to9/CE                 |                  |                4 |              5 |
+|  not_so_slow/slowclk/clk_out |                                                     |                  |               14 |             21 |
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+
+

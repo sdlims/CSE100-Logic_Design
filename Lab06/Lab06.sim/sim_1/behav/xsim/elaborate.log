@@ -1,0 +1,22 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2285afae5a454c2996cfff0008400048 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'led' on this module [C:/Users/sdli/Downloads/test3.v:63]
+ERROR: [VRFC 10-3180] cannot find port 'sw' on this module [C:/Users/sdli/Downloads/test3.v:62]
+ERROR: [VRFC 10-3180] cannot find port 'Hsync' on this module [C:/Users/sdli/Downloads/test3.v:61]
+ERROR: [VRFC 10-3180] cannot find port 'Vsync' on this module [C:/Users/sdli/Downloads/test3.v:60]
+ERROR: [VRFC 10-3180] cannot find port 'vgaGreen' on this module [C:/Users/sdli/Downloads/test3.v:59]
+ERROR: [VRFC 10-3180] cannot find port 'vgaRed' on this module [C:/Users/sdli/Downloads/test3.v:58]
+ERROR: [VRFC 10-3180] cannot find port 'vgaBlue' on this module [C:/Users/sdli/Downloads/test3.v:57]
+ERROR: [VRFC 10-3180] cannot find port 'an' on this module [C:/Users/sdli/Downloads/test3.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'dp' on this module [C:/Users/sdli/Downloads/test3.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'seg' on this module [C:/Users/sdli/Downloads/test3.v:54]
+ERROR: [VRFC 10-3180] cannot find port 'clkin' on this module [C:/Users/sdli/Downloads/test3.v:53]
+ERROR: [VRFC 10-3180] cannot find port 'btnL' on this module [C:/Users/sdli/Downloads/test3.v:52]
+ERROR: [VRFC 10-3180] cannot find port 'btnR' on this module [C:/Users/sdli/Downloads/test3.v:51]
+ERROR: [VRFC 10-3180] cannot find port 'btnC' on this module [C:/Users/sdli/Downloads/test3.v:50]
+ERROR: [VRFC 10-3180] cannot find port 'btnD' on this module [C:/Users/sdli/Downloads/test3.v:49]
+ERROR: [VRFC 10-3180] cannot find port 'btnU' on this module [C:/Users/sdli/Downloads/test3.v:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

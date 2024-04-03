@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  9 10:53:33 2023
+# Process ID: 4540
+# Current directory: C:/Users/sdli/Downloads/Lab05.xpr/Lab05V2.xpr/Lab05/Lab05.runs/synth_1
+# Command line: vivado.exe -log TopMod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopMod.tcl
+# Log file: C:/Users/sdli/Downloads/Lab05.xpr/Lab05V2.xpr/Lab05/Lab05.runs/synth_1/TopMod.vds
+# Journal file: C:/Users/sdli/Downloads/Lab05.xpr/Lab05V2.xpr/Lab05/Lab05.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopMod.tcl -notrace

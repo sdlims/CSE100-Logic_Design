@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab05.srcs/sources_1/new/AddSub8.v" \
+"../../../../Lab05.srcs/sources_1/new/LEDShifter.v" \
+"../../../../Lab05.srcs/sources_1/new/Selector.v" \
+"../../../../Lab05.srcs/sources_1/new/StateMachine.v" \
+"../../../../Lab05.srcs/sources_1/new/TopMod.v" \
+"../../../../Lab05.srcs/sources_1/new/bitAdder.v" \
+"../../../../Lab05.srcs/sources_1/new/count8UL.v" \
+"../../../../Lab05.srcs/sources_1/new/fullAdder.v" \
+"../../../../Lab05.srcs/sources_1/new/hex7seg.v" \
+"../../../../../qsec_clks.v" \
+"../../../../Lab05.srcs/sources_1/new/ringCounter.v" \
+"../../../../../testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
